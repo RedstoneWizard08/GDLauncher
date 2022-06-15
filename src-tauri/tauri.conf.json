@@ -1,0 +1,71 @@
+{
+    "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+    "build": {
+        "beforeBuildCommand": "pnpm build",
+        "beforeDevCommand": "pnpm dev",
+        "devPath": "http://localhost:3000",
+        "distDir": "../dist"
+    },
+    "package": {
+        "productName": "gdlauncher",
+        "version": "1.2.0"
+    },
+    "tauri": {
+        "allowlist": {
+            "all": true
+        },
+        "bundle": {
+            "active": true,
+            "category": "SimulationGame",
+            "copyright": "Copyright (C) 2022 Gorilla Devs",
+            "deb": {
+                "depends": []
+            },
+            "externalBin": [],
+            "icon": [
+                "icons/32x32.png",
+                "icons/128x128.png",
+                "icons/128x128@2x.png",
+                "icons/icon.icns",
+                "icons/icon.ico"
+            ],
+            "identifier": "io.gdevs.gdlauncher",
+            "longDescription": "GDLauncher is a custom open-source Minecraft launcher written from the ground up in preact/rust. Its main goal is to make it easy and enjoyable to manage different Minecraft versions and install forge/fabric/quilt, bringing the playing and modding experience to the next level!",
+            "macOS": {
+                "entitlements": null,
+                "exceptionDomain": "",
+                "frameworks": [],
+                "providerShortName": null,
+                "signingIdentity": null
+            },
+            "resources": [],
+            "shortDescription": "GDLauncher is a simple, yet powerful Minecraft custom launcher with a strong focus on the user experience.",
+            "targets": "all",
+            "windows": {
+                "certificateThumbprint": null,
+                "digestAlgorithm": "sha256",
+                "timestampUrl": ""
+            }
+        },
+        "security": {
+            "csp": null
+        },
+        "updater": {
+            "active": false,
+            "endpoints": [
+                "https://gdlauncher.com/api/carbon/releases/{{current_version}}/{{target}}"
+            ],
+            "dialog": true,
+            "pubkey": ".tauri/gdlauncher.key.pub"
+        },
+        "windows": [
+            {
+                "fullscreen": false,
+                "height": 600,
+                "resizable": true,
+                "title": "GDLauncher",
+                "width": 800
+            }
+        ]
+    }
+}

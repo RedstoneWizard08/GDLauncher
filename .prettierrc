@@ -1,0 +1,17 @@
+{
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "endOfLine": "lf",
+    "jsxSingleQuote": false,
+    "pluginSearchDirs": ["."],
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "plugins": [
+        "prettier-plugin-properties",
+        "prettier-plugin-sh",
+        "prettier-plugin-toml",
+        "@trivago/prettier-plugin-sort-imports"
+    ]
+}

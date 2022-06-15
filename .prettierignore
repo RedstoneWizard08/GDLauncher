@@ -1,0 +1,8 @@
+.git
+GDLauncher
+node_modules
+build
+dist
+target
+pnpm-lock.yaml
+*.md
